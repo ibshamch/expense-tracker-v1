@@ -1,13 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app-header {
+  text-align: center;
+  border: 2px solid black;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: none;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.expense-maker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+  border: 2px solid black;
+  max-width: 600px;
+  margin: 0 auto;
+  border-top: none;
+}
+
+.expense-input-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  max-width: 300px;
+}
+.expense-input-box > input {
+  text-align: center;
+  padding: 0.5em;
+  max-width: 150px;
+}
+button {
+  padding: 1em 1.5em;
+  background-color: crimson;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.salary-box {
+  border-bottom: none;
+}
+.receipt {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  margin-top: 1em;
+  border: blue 2px dotted;
+}
+.expense-detail {
+  font-size: 0.9rem;
+}
+
+.expense-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+
+.items {
+  font-weight: 300;
+  text-align: center;
+}
+
+.salaryGreen {
+  color: green;
+  font-weight: lighter;
+}
+.salaryRed {
+  color: red;
 }
